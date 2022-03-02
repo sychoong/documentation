@@ -3,23 +3,23 @@
     <Header></Header>
     <div class="sticky top-0 ">
       <ol class="header__navigation">
-        <li>
-          <a v-on:click="selectCategory('Scss')">
+        <li v-on:click="selectCategory('Scss')">
+          <a>
             SASS And SCSS
           </a>
         </li>
-        <li>
-          <a v-on:click="selectCategory('Selector')">
+        <li v-on:click="selectCategory('Selector')">
+          <a>
             Selector and Block
           </a>
         </li>
-        <li>
-          <a v-on:click="selectCategory()">
+        <li v-on:click="selectCategory()">
+          <a>
             Specificity
           </a>
         </li>
-        <li>
-          <a v-on:click="selectCategory()">
+        <li v-on:click="selectCategory()">
+          <a>
             BEM Model
           </a>
         </li>
