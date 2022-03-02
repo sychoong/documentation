@@ -1,0 +1,71 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+html {
+  font-size: 125%;
+}
+section {
+  @apply
+  py-6
+  leading-8
+  text-base
+}
+
+h2 {
+  @apply
+  font-bold 
+  text-2xl 
+  mb-2 
+  text-center
+}
+
+h3 {
+  @apply
+  text-xl
+  font-bold
+  my-4
+}
+
+p{
+  @apply
+  my-2
+}
+
+img {
+  @apply
+  m-auto 
+  my-4
+}
+
+pre[class*="language-"] {
+  @apply
+  max-w-xl
+  mx-auto
+  my-4
+  rounded
+}
+span.caption{
+  @apply
+  text-center 
+  block
+}
+
+.header__navigation {
+  @apply
+  flex
+  bg-gray-500
+}
+.header__navigation li{
+  @apply
+  flex-1
+  py-1
+  px-4
+  transition-all
+  hover:bg-gray-400
+}
+.header__navigation li:hover{
+  cursor: pointer;
+}

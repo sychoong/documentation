@@ -1,32 +1,54 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="app" class="bg-black text-white min-h-screen">
+    <Header></Header>
+    <div class="sticky top-0 ">
+      <ol class="header__navigation">
+        <li>
+          <a v-on:click="selectCategory('Scss')">
+            SASS And SCSS
+          </a>
+        </li>
+        <li>
+          <a v-on:click="selectCategory('Selector')">
+            Selector and Block
+          </a>
+        </li>
+        <li>
+          <a v-on:click="selectCategory()">
+            Specificity
+          </a>
+        </li>
+        <li>
+          <a v-on:click="selectCategory()">
+            BEM Model
+          </a>
+        </li>
+      </ol>
     </div>
-    <router-view/>
+    <div class="mx-auto px-4">
+      <router-view :category="category" />
+    </div>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+// @ is an alias to /src
+import Header from '@/components/Header.vue'
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+export default {
+  name: 'Home',
+  components: {
+    Header
+  },
+  data(){
+    return{
+      category : '',
     }
-  }
+  },
+  methods:{
+    selectCategory(category){
+      this.category = category
+    }
+  },
 }
-</style>
+</script>
