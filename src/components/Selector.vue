@@ -17,9 +17,9 @@
       </span>
       <pre>
         <code class="language-css" data-language="css">
-          p, a {
-            font-size: 20px;
-          }
+p, a {
+  font-size: 20px;
+}
         </code>
       </pre>
     </p>
@@ -39,16 +39,16 @@
     <p>You can target a specific element that has a class, or id, attached.</p>
     <pre>
       <code class="language-css" data-language="css">
-        p.dog-name {
-          color: yellow;
-        }
+p.dog-name {
+  color: yellow;
+}
       </code>
     </pre>
     <pre>
       <code class="language-css" data-language="css">
-        p#dog-name {
-          color: yellow;
-        }
+p#dog-name {
+  color: yellow;
+}
       </code>
     </pre>
     <p>
@@ -62,17 +62,17 @@
       <span class="caption">In HTML</span>
       <pre>
         <code class="language-markup">
-          &lt;p class="dog-name roger">
-            Roger
-          &lt;/p>
+&lt;p class="dog-name roger">
+  Roger
+&lt;/p>
         </code>
       </pre>
       <span class="caption">In CSS</span>
       <pre class="language-markup">
         <code class="language-css" data-language="css">
-          .dog-name.roger {
-            color: yellow;
-          }
+.dog-name.roger {
+  color: yellow;
+}
         </code>
       </pre>
     </p>
@@ -81,17 +81,17 @@
     <span class="caption">In HTML</span>
     <pre>
       <code class="language-markup">
-        &lt;p class="dog-name" id="roger">
-          Roger
-        &lt;/p>
+&lt;p class="dog-name" id="roger">
+  Roger
+&lt;/p>
       </code>
     </pre>
     <span class="caption">In CSS</span>
     <pre class="language-markup">
       <code class="language-css" data-language="css">
-        .dog-name#roger {
-          color: yellow;
-        }
+.dog-name#roger {
+  color: yellow;
+}
       </code>
     </pre>
     <h3>Grouping selectors</h3>
@@ -103,29 +103,29 @@
     <span class="caption">In HTML</span>
     <pre>
       <code class="language-markup">
-        &lt;p>
-          My dog name is:
-        &lt;/p>
-        &lt;span class="dog-name"> 
-          Roger 
-        &lt;/span>
+&lt;p>
+  My dog name is:
+&lt;/p>
+&lt;span class="dog-name"> 
+  Roger 
+&lt;/span>
       </code>
     </pre>
     <span class="caption">In CSS</span>
     <pre>
       <code class="language-css" data-language="css">
-        p, .dog-name {
-          color: yellow;
-        }
+p, .dog-name {
+  color: yellow;
+}
       </code>
     </pre>
     <span class="caption">add spaces in those declarations to make them more clear:</span>
     <pre>
       <code class="language-css" data-language="css">
-        p, 
-        .dog-name {
-          color: yellow;
-        }
+p, 
+.dog-name {
+  color: yellow;
+}
       </code>
     </pre>
   </section>
@@ -138,14 +138,14 @@
     <span class="caption">In HTML</span>
     <pre>
       <code class="language-markup">
-        &lt;span> 
-          Hello!
-        &lt;/span>
-        &lt;p>
-          &lt;span class="dog-name"> 
-            Roger  
-          &lt;/span>
-        &lt;p>
+&lt;span> 
+  Hello!
+&lt;/span>
+&lt;p>
+  &lt;span class="dog-name"> 
+    Roger  
+  &lt;/span>
+&lt;p>
       </code>
     </pre>
     <span class="caption">In CSS</span>
@@ -165,9 +165,9 @@
     </p>
     <pre>
       <code class="language-css" data-language="css">
-        p > span {
-          color: yellow;
-        }
+p > span {
+  color: yellow;
+}
       </code>
     </pre>
     <p>
@@ -177,14 +177,14 @@
     </p>
     <pre>
       <code class="language-markup">
-      &lt;p>
-        &lt;span> 
-          This is Yellow
-          &lt;strong>
-            &lt;span> This is not yellow &lt;/span>
-          &lt;/strong>
-        &lt;/span>
-      &lt;p>
+&lt;p>
+  &lt;span> 
+    This is Yellow
+    &lt;strong>
+      &lt;span> This is not yellow &lt;/span>
+    &lt;/strong>
+  &lt;/span>
+&lt;p>
       </code>
     </pre>
     <p>
@@ -194,9 +194,9 @@
     </p>
     <pre>
       <code class="language-css" data-language="css">
-        p + span {
-          color: yellow;
-        }
+p + span {
+  color: yellow;
+}
       </code>
     </pre>
     <p>
@@ -204,10 +204,10 @@
     </p>
     <pre>
       <code class="language-markup">
-        &lt;p>
-          This is a paragraph
-        &lt;p>
-        &lt;span> This is a yellow span &lt;/span>
+&lt;p>
+  This is a paragraph
+&lt;p>
+&lt;span> This is a yellow span &lt;/span>
       </code>
     </pre>
     <p>
@@ -219,28 +219,28 @@
     </p>
     <pre>
       <code class="language-css" data-language="css">
-        p ~ ul {
-          background: #ff0000;
-        }
+p ~ ul {
+  background: #ff0000;
+}
       </code>
     </pre>
     <span class="caption"> All &lt;ul> elements that are preceded by a &lt;p> element with the same parent will apply the background color</span>
     <pre>
       <code class="language-markup">
-        &lt;div>A div element.&lt;/div>
-        &lt;ul>
-          &lt;li>Doesn't apply the bg color&lt;/li>
-        &lt;/ul>
+&lt;div>A div element.&lt;/div>
+&lt;ul>
+  &lt;li>Doesn't apply the bg color&lt;/li>
+&lt;/ul>
 
-        &lt;p>The first paragraph.&lt;/p>
-        &lt;ul>
-          &lt;li>Apply the BG color&lt;/li>
-        &lt;/ul>
+&lt;p>The first paragraph.&lt;/p>
+&lt;ul>
+  &lt;li>Apply the BG color&lt;/li>
+&lt;/ul>
 
-        &lt;h2>Another list&lt;/h2>
-        &lt;ul>
-          &lt;li>Apply the BG color&lt;/li>
-        &lt;/ul>
+&lt;h2>Another list&lt;/h2>
+&lt;ul>
+  &lt;li>Apply the BG color&lt;/li>
+&lt;/ul>
       </code>
     </pre>
     <p>
@@ -273,18 +273,18 @@
     </p>
     <pre>
       <code class="language-css" data-language="css">
-        p[id] {
-          /* ... */
-        }
+p[id] {
+  /* ... */
+}
       </code>
     </pre>
     <h3>Exact attribute value selectors</h3>
     <p>Inside the brackets you can check the attribute value using =, and the CSS will be applied only if the attribute matches the exact value specified:</p>
     <pre>
       <code class="language-css" data-language="css">
-        p[id="my-id"] {
-          /* ... */
-        }
+p[id="my-id"] {
+  /* ... */
+}
       </code>
     </pre>
     <h3>

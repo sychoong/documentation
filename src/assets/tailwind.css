@@ -64,8 +64,8 @@ pre[class*="language-"] {
   @apply
   max-w-xl
   mx-auto
-  my-4
   rounded
+  px-12
 }
 
 span.caption{

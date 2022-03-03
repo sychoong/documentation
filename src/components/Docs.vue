@@ -9,6 +9,9 @@
     <div id="Specificity">
       <Specificity></Specificity>
     </div>
+    <div id="BEM">
+      <BEM></BEM>
+    </div>
   </div>
 </template>
 
@@ -16,6 +19,7 @@
 import Scss from '@/components/Scss.vue'
 import Selector from '@/components/Selector.vue'
 import Specificity from '@/components/Specificity.vue'
+import BEM from '@/components/BEM.vue'
 export default {
   name: 'Docs',
   props: {
@@ -27,6 +31,7 @@ export default {
     Scss,
     Selector,
     Specificity,
+    BEM,
   },
   watch: {
     category : function(){

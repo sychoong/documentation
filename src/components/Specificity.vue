@@ -9,23 +9,23 @@
     </p>
     <pre>
         <code class="language-markup">
-          &lt;p class="dog-name">Roger&lt;/p>
+&lt;p class="dog-name">Roger&lt;/p>
         </code>
       </pre>
     We can have
     <pre>
         <code class="language-css" data-language="css">
-          .dog-name {
-            color: yellow;
-          }
+.dog-name {
+  color: yellow;
+}
         </code>
       </pre>
     and another rule that targets p, which sets the color to another value:
     <pre>
         <code class="language-css" data-language="css">
-          p {
-            color: red;
-          }
+p {
+  color: red;
+}
         </code>
       </pre>
     <p>
@@ -67,20 +67,11 @@
     </p>
     <pre>
         <code class="language-css" data-language="css">
-          p {
-          } /* 0 0 0 1 */
-
-          span {
-          } /* 0 0 0 1 */
-
-          p span {
-          } /* 0 0 0 2 */
-
-          p > span {
-          } /* 0 0 0 2 */
-          
-          div p > span {
-          } /* 0 0 0 3 */
+p {} /* 0 0 0 1 */
+span {} /* 0 0 0 1 */
+p span {} /* 0 0 0 2 */
+p > span {} /* 0 0 0 2 */
+div p > span {} /* 0 0 0 3 */
         </code>
       </pre>
     <h3>
@@ -101,17 +92,17 @@
     </p>
     <pre>
         <code class="language-css" data-language="css">
-          .name {
-          } /* 0 0 1 0 */
+.name {
+} /* 0 0 1 0 */
 
-          .users .name {
-          } /* 0 0 2 0 */
+.users .name {
+} /* 0 0 2 0 */
 
-          [href$=".pdf"] {
-          } /* 0 0 1 0 */
+[href$=".pdf"] {
+} /* 0 0 1 0 */
 
-          :hover {
-          } /* 0 0 1 0 */
+:hover {
+} /* 0 0 1 0 */
         </code>
       </pre>
     <p>
@@ -119,14 +110,14 @@
     </p>
     <pre>
         <code class="language-css" data-language="css">
-          div .name {
-          } /* 0 0 1 1 */
+div .name {
+} /* 0 0 1 1 */
 
-          a[href$=".pdf"] {
-          } /* 0 0 1 1 */
+a[href$=".pdf"] {
+} /* 0 0 1 1 */
 
-          .pictures img:hover {
-          } /* 0 0 2 1 */
+.pictures img:hover {
+} /* 0 0 2 1 */
         </code>
       </pre>
     <p>
@@ -136,14 +127,14 @@
     </p>
     <pre>
         <code class="language-css" data-language="css">
-          .name {
-          } /* 0 0 1 0 */
+.name {
+} /* 0 0 1 0 */
 
-          .name.name {
-          } /* 0 0 2 0 */
+.name.name {
+} /* 0 0 2 0 */
 
-          .name.name.name {
-          } /* 0 0 3 0 */
+.name.name.name {
+} /* 0 0 3 0 */
         </code>
       </pre>
     <h3>
@@ -158,14 +149,14 @@
     </p>
     <pre>
         <code class="language-css" data-language="css">
-          #name {
-          } /* 0 1 0 0 */
+#name {
+} /* 0 1 0 0 */
 
-          .user #name {
-          } /* 0 1 1 0 */
+.user #name {
+} /* 0 1 1 0 */
 
-          #name span {
-          } /* 0 1 0 1 */
+#name span {
+} /* 0 1 0 1 */
         </code>
       </pre>
     <h3>
@@ -178,9 +169,9 @@
     </p>
     <pre>
         <code class="language-markup">
-        &lt;p style="color: red">Test&lt;/p> 
+&lt;p style="color: red">Test&lt;/p> 
 
-        /* 1 0 0 0 */
+/* 1 0 0 0 */
         </code>
       </pre>
     <p>
@@ -209,9 +200,9 @@
     </p>
     <pre>
         <code class="language-css" data-language="css">
-          p {
-            font-size: 20px !important;
-          }
+p {
+  font-size: 20px !important;
+}
         </code>
       </pre>
     <p>
