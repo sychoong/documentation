@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="bg-black text-white min-h-screen">
+  <div id="app">
     <Header></Header>
     <div class="sticky top-0 ">
       <ol class="header__navigation">
@@ -13,19 +13,19 @@
             Selector and Block
           </a>
         </li>
-        <li v-on:click="selectCategory()">
+        <li v-on:click="selectCategory('Specificity')">
           <a>
             Specificity
           </a>
         </li>
-        <li v-on:click="selectCategory()">
+        <li v-on:click="selectCategory('BEM')">
           <a>
             BEM Model
           </a>
         </li>
       </ol>
     </div>
-    <div class="mx-auto px-4">
+    <div class="body__docs">
       <router-view :category="category" />
     </div>
   </div>
