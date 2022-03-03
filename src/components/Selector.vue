@@ -151,9 +151,9 @@ p,
     <span class="caption">In CSS</span>
     <pre>
       <code class="language-css" data-language="css">
-        p span {
-          color: yellow;
-        }
+p span {
+  color: yellow;
+}
       </code>
     </pre>
     <p>
