@@ -49,6 +49,7 @@ export default {
   methods :{
     getCategory(name){
       this.category = name
+      this.showNavigationList = false
     },
     getNavigationList(state){
       const windowWidth = window.innerWidth
