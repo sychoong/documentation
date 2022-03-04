@@ -10,6 +10,7 @@ html {
 
 #app{
   background-color: #1a1a1a;
+  scroll-behavior: smooth;
   @apply
   text-white 
   min-h-screen
@@ -93,13 +94,41 @@ ul {
   text-pink-300
   capitalize
 }
+.header {
+  @apply
+  sticky
+  top-0
+  md:relative
+  flex 
+  flex-row
+  justify-between
+  items-center
+  bg-gray-700 
+  p-4
+}
+.header__button {
+  width: 20px;
+  height: 18px;
+  border-bottom: 2px solid white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  @apply
+  flex
+  md:hidden
+}
+.header__button::after , .header__button::before {
+  display: block;
+  content: ' ';
+  width: 25px;
+  border-bottom: 2px solid white;
+}
 
 .header__navigation {
   @apply
-  hidden
+  flex
   flex-col
   md:flex-row
-  md:flex
   bg-gray-500
   cursor-pointer
 }

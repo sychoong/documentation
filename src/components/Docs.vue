@@ -36,7 +36,11 @@ export default {
   watch: {
     category : function(){
       const element = document.getElementById(this.$props.category)
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      // element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      window.scroll({
+        top: element.getBoundingClientRect().top,
+        behavior: 'smooth'
+      })
     }
   }
 }
