@@ -33,7 +33,7 @@
 // @ is an alias to /src
 import Header from '@/components/Header.vue'
 import HeaderNavigation from '@/components/HeaderNavigation.vue'
-
+const windowWidth = window.innerWidth
 export default {
   name: 'Home',
   components: {
@@ -49,10 +49,11 @@ export default {
   methods :{
     getCategory(name){
       this.category = name
-      this.showNavigationList = false
+      if (windowWidth <= 766) {
+        this.showNavigationList = false
+      }
     },
     getNavigationList(state){
-      const windowWidth = window.innerWidth
       if (windowWidth <= 766) {
         this.showNavigationList = state
       } else {
@@ -61,7 +62,6 @@ export default {
     }
   },
   created() {
-    const windowWidth = window.innerWidth
     if (windowWidth <= 766) { 
       this.showNavigationList = false
     }
